@@ -8,7 +8,7 @@ class School
  def add_student(name, grade)
    student = {}
    student[name] = []
-   student[name] => grade
+   student[name] = grade
    @roster << student
  end
 end
