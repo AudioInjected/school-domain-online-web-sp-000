@@ -19,6 +19,7 @@ class School
  end
 
  def sort
-  return  @roster.sort.each {|key, value| value.sort}
+  array =  @roster.sort.each {|key, value| value.sort}
+  return array
  end
 end
