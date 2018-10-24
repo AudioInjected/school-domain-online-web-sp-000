@@ -9,5 +9,6 @@ class School
    hash = {}
    hash[grade] = []
    hash[grade] = name
+   @roster << hash
  end
 end
