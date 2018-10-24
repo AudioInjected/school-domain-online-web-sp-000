@@ -6,7 +6,8 @@ class School
  end
 
  def add_student(name, grade)
-   student => {name, grade}
+   student = {}
+   student => (name, grade)
    @roster << student
  end
 end
