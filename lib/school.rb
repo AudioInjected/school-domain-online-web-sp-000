@@ -8,6 +8,10 @@ class School
  def add_student(name, grade)
    if @roster[grade]
       @roster[grade] << name
+   else
+     student = {grade => []}
+     student[grade] = name
+     @roster << student
   end
  end
 end
