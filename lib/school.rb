@@ -9,9 +9,9 @@ class School
    if @roster[grade]
       @roster[grade] << name
    else
-     student = {grade => []}
-     student[grade] = name
-     @roster << student
+     @roster[grade] = []
+     @roster[grade] << name
+    
   end
  end
 end
