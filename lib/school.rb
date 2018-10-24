@@ -8,8 +8,7 @@ class School
  def add_student(name, grade)
    hash = {}
    hash[grade] = []
-   hash[grade] = name
-   hash[grade] << "Jim"
+   hash[grade] << name
    @roster << hash
  end
 end
