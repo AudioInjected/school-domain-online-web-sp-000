@@ -2,13 +2,12 @@ class School
   attr_reader :roster
  def initialize(name)
    @name = name
-   @roster = []
+   @roster = {}
  end
 
  def add_student(name, grade)
-   hash = {}
-   hash[grade] = []
-   hash[grade] << name
-   @roster << hash
+   student = {grade => []}
+   student[grade] << name
+   @roster << student
  end
 end
